@@ -2,39 +2,43 @@
 
 ## Description
 
-Business owners often need to manage the inner workings of their companies, specifically the departments, roles and employees within those businesses. As a result, keeping track of information stored in databases is a critical component of running daily operations, and one of the easiest ways a business owner can interact with their stored information is through a content management system (CMS).
+Competition is tough for companies operating in the internet retail space and they often need websites that use the latest back end technologies to power their E-commerce in order to keep pace.
 
-Enter the purpose of this project: utilize Node.js, Express.js, Inquirer, and MySQL to create a command-line application to manage a company's database. The application is easily installed and initialized, and includes the following features:
+Enter the purpose of this project: utilize Node.js, Express.js, MySQL, and Sequelize to create a back end application to manage a company's inventory database. The application is easily installed and initialized, and includes the following features:
 
-- Once the application starts the user is presented with the options to view all employees, view all roles, view all departments, or view employees by department.
-- The user is also presented with options to update a current employee's role, add a new department, add a new role, or add a new employee.
-- If the user chooses to view current employees, roles, or departments, they are presented with a formatted table showing the results.
-- If the user chooses to view a current role or current employee, they are presented with the data along with the corresponding salary for that result.
-- If the user chooses to add a new department, role, or employee, they are able to enter the information into the CLI and the database will be updated accordingly.
+- Once the user logs into MySQL and connects to the database, they are able to enter the schema and can then seed the database with test data
+- Once the user initializes the server, the Sequelize models are synced to the database
+- The user is then able to utilize API GET routes to retrieve data for their inventory's 'categories', 'products', or 'tags'
+- The user is also able to utilize API POST, PUT, and DELETE routes to create, update, and delete data from the database
+
+Being able to retrieve, add, and modify data is a critical aspect of running any E-commerce business, and the functionality enabled by this application allows that to happen.
 
 
 ## Installation
 
 To install this application, first clone the repo to your local machine. Then, you will need to install the node dependencies/modules which can be done by running the ```npm install``` command in your terminal/bash shell. 
 
-
 ## Usage
 
 To use this application, you first need to have MySQL installed, and then initialize the database:
 
-![Vik's Team Profile Generator Usage Example Video](src/employee-tracker-initialize-database-example.gif)
+![Vik's E-Commerce Back End Application Start Database Gif](src/Untitled-1.gif)
 
- Once this has been completed, you are ready to use the application, so open up the repo's folder in your terminal/bash shell and run the command ```node server.js``` or ```npm run start```. 
+Next, source the database:
 
-![Vik's Team Profile Generator Testing Example Video](src/employee-tracker-initialize-server-example.gif)
+![Vik's E-Commerce Back End Application Source Database Gif](src/Untitled-2.gif)
 
-You will then be informed that the program has started, and will be given prompts, and can select from various options the information you would like to request or modify. 
+Then, in order to seed the the database, open up the repo's folder in your terminal/bash shell and run the command ```npm run seed```:
 
-Here is an example of the application from the CLI:
+![Vik's E-Commerce Back End Application Seed Database Gif](src/Untitled-3.gif)
 
-![Vik's Employee Tracker](src/screenshot.png)
+Once those steps have been completed, you are ready to use the application by using either of the following commands  ```node server.js``` or ```npm run start```. 
 
-A full video walkthrough can be found [here](https://vimeo.com/710039912).
+![Vik's E-Commerce Back End Application Start Server Gif](src/Untitled-4.gif)
+
+You will then be informed that the server has started, and which port it is currently running on.
+
+A full video walkthrough can be found [here](https://vimeo.com/712703436).
 
 
 ## Credits
@@ -64,5 +68,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTH
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
