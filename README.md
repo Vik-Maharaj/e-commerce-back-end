@@ -2,7 +2,7 @@
 
 ## Description
 
-Competition is tough for companies operating in the internet retail space and they often need websites that use the latest back end technologies to power their E-commerce in order to keep pace.
+Competition is tough for companies operating in the internet retail space and they need websites that use the latest back end technologies to power their E-commerce in order to keep pace.
 
 Enter the purpose of this project: utilize Node.js, Express.js, MySQL, and Sequelize to create a back end application to manage a company's inventory database. The application is easily installed and initialized, and includes the following features:
 
@@ -32,7 +32,7 @@ Then, in order to seed the the database, open up the repo's folder in your termi
 
 ![Vik's E-Commerce Back End Application Seed Database Gif](src/Untitled-3.gif)
 
-Once those steps have been completed, you are ready to use the application by using either of the following commands  ```node server.js``` or ```npm run start```. 
+Once those steps have been completed, you are ready to use the application by entering either of the following commands  ```node server.js``` or ```npm run start```. 
 
 ![Vik's E-Commerce Back End Application Start Server Gif](src/Untitled-4.gif)
 
